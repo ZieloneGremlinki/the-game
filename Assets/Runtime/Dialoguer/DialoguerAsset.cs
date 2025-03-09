@@ -7,6 +7,7 @@ using UnityEditor.Graphs;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UIElements;
+using Object = UnityEngine.Object;
 
 namespace GreenGremlins.Dialoguer
 {
@@ -40,6 +41,11 @@ namespace GreenGremlins.Dialoguer
         {
             return Nodes.Where(n => n.IsStartNode).ToList()[0];
         }
+
+        public DialoguerNodeData GetNode(int idx)
+        {
+            return idx < 0 || idx > Nodes.Count ? null : Nodes[idx];
+        }
         
         public List<DialoguerNodeData> GetEndNodes()
         {
@@ -51,7 +57,11 @@ namespace GreenGremlins.Dialoguer
         {
             if (root == null) 
             {
-                root = CreateNode(typeof(DialoguerStartNode));
+                foreach (Object obj in AssetDatabase.LoadAllAssetsAtPath(AssetDatabase.GetAssetPath(this)))
+                {
+                    if (obj is DialoguerStartNode) root = obj as DialoguerStartNode;
+                }
+                if (root == null) root = CreateNode(typeof(DialoguerStartNode));
             }
         }
 
@@ -87,6 +97,7 @@ namespace GreenGremlins.Dialoguer
         {
             Undo.RecordObject(parent, "Dialoguer (Add Link)");
             parent.children.Add(child);
+            child.parents.Add(parent);
             Links.Add(new NodeLink(parentId, child.NodeGUID, parent.NodeGUID));
             EditorUtility.SetDirty(parent);
         }
@@ -95,14 +106,8 @@ namespace GreenGremlins.Dialoguer
         {
             Undo.RecordObject(parent, "Dialoguer (Remove Link)");
             parent.children.Remove(child);
-            foreach (NodeLink link in Links)
-            {
-                if (link.output == parent.NodeGUID && link.input == child.NodeGUID)
-                {
-                    Links.Remove(link);
-                    break;
-                }
-            }
+            child.parents.Remove(parent);
+            Links.Where(x => x.output == parent.NodeGUID && x.input == child.NodeGUID).ToList().ForEach(x => Links.Remove(x));
             EditorUtility.SetDirty(parent);
         }
         #endif

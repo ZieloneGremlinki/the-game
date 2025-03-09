@@ -20,6 +20,14 @@ namespace GreenGremlins.Dialoguer
 
         public EmotionType emotion;
         public Sprite sprite;
+
+        public static Emotion Create()
+        {
+            return (Emotion)CreateInstance(typeof(Emotion));
+        }
+
+        public static string EMOTION_NAME => nameof(emotion);
+        public static string EMOTION_SPRITE => nameof(sprite);
     }
     
     [CreateAssetMenu(menuName = "Dialoguer/New Person Data", fileName = "New Person Data"), Serializable]
@@ -27,5 +35,14 @@ namespace GreenGremlins.Dialoguer
     {
         public string Name;
         public Emotion[] Emotions;
+
+        public Emotion GetEmotion(Emotion.EmotionType emotion)
+        {
+            for (int i = 0; i < Emotions.Length; i++)
+            {
+                if (Emotions[i].emotion == emotion) return Emotions[i];
+            }
+            return Emotions[0];
+        }
     }
 }

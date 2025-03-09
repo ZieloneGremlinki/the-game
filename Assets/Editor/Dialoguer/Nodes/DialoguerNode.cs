@@ -40,26 +40,38 @@ namespace GreenGremlins.Dialoguer.Editor.Nodes
         {
             this.data = data;
             title = "Dialoguer Node";
-            if (data.IsStartNode) title = "Entry Point";
-            else if (data.IsEndNode) title = "End Point";
             
             viewDataKey = data.NodeGUID;
 
-            if (data.IsStartNode)
+            switch (data)
             {
-                capabilities &= ~Capabilities.Deletable;
-                capabilities &= ~Capabilities.Movable;
-                capabilities &= ~Capabilities.Selectable;
-                CreateStartOut();
-            }
-            else if (data.IsEndNode)
-            {
-                CreateEndIn();
-            }
-            else
-            {
-                CreateInput();
-                NodeUpdated();
+                case DialoguerStartNode n:
+                {
+                    title = "Entry Point";
+                    capabilities &= ~Capabilities.Deletable;
+                    capabilities &= ~Capabilities.Movable;
+                    capabilities &= ~Capabilities.Selectable;
+                    CreateStartOut();
+                    break;
+                }
+                case DialoguerEndNode n:
+                {
+                    title = "End Point";
+                    CreateEndIn();
+                    break;
+                }
+                case DialoguerFunctionNode n:
+                {
+                    title = "Function Node";
+                    CreateInput();
+                    break;
+                }
+                case DialoguerActionNode n:
+                {
+                    CreateInput();
+                    NodeUpdated();
+                    break;
+                }
             }
 
             style.left = data.Position.x;
@@ -110,7 +122,7 @@ namespace GreenGremlins.Dialoguer.Editor.Nodes
         
         private void CreateInput()
         {
-            input = InstantiatePort(Orientation.Horizontal, Direction.Input, Port.Capacity.Single, typeof(bool));
+            input = InstantiatePort(Orientation.Horizontal, Direction.Input, Port.Capacity.Multi, typeof(bool));
             if (input != null)
             {
                 input.portName = "IN";

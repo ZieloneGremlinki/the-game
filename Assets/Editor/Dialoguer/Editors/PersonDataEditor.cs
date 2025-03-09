@@ -6,7 +6,7 @@ using Object = UnityEngine.Object;
 
 namespace GreenGremlins.Dialoguer.Editor.Editors
 {
-    //[CustomEditor(typeof(PersonData))]
+    [CustomEditor(typeof(PersonData))]
     public class PersonDataEditor : UnityEditor.Editor
     {
         private SerializedProperty propPersonName;
@@ -21,22 +21,62 @@ namespace GreenGremlins.Dialoguer.Editor.Editors
             emotions = new ReorderableList(serializedObject, propEmotions,
                 false, true, true, true);
             
+            emotions.drawHeaderCallback = rect =>
+            {
+                EditorGUI.LabelField(rect, "Emotions", EditorStyles.boldLabel);
+            };
+            
             emotions.drawElementCallback = (rect, index, _, _) =>
             {
-                SerializedProperty el = emotions.serializedProperty.GetArrayElementAtIndex(index);
+                SerializedObject e = new SerializedObject(propEmotions.GetArrayElementAtIndex(index).objectReferenceValue);
+                SerializedProperty emotion = e.FindProperty(Emotion.EMOTION_NAME);
+                
                 rect.y += 2;
-                EditorGUI.PropertyField(new Rect(rect.x, rect.y, rect.width, EditorGUIUtility.singleLineHeight),
-                    el.FindPropertyRelative("emotion"), GUIContent.none);
+                EditorGUI.PropertyField(new Rect(rect.x, rect.y, rect.width/2f, EditorGUIUtility.singleLineHeight),
+                    emotion, GUIContent.none);
+                EditorGUI.PropertyField(new Rect(rect.x+rect.width/2f, rect.y, rect.width/2f, EditorGUIUtility.singleLineHeight),
+                    e.FindProperty(Emotion.EMOTION_SPRITE), GUIContent.none);
+
+                if (e.ApplyModifiedProperties())
+                {
+                    if (e.targetObject.name != emotion.enumNames[emotion.enumValueIndex])
+                    {
+                        e.targetObject.name = emotion.enumNames[emotion.enumValueIndex];
+                        AssetDatabase.SaveAssets();
+                    }
+                }
             };
 
-            emotions.onAddCallback = (lst) =>
+            emotions.onAddCallback = _ =>
             {
                 propEmotions.arraySize++;
-                Emotion emotion = CreateInstance(typeof(Emotion)) as Emotion;
-                AssetDatabase.AddObjectToAsset(serializedObject.targetObject, emotion);
-                
-                emotions.list[emotions.list.Count] = emotion;
+                propEmotions.GetArrayElementAtIndex(propEmotions.arraySize - 1).objectReferenceValue = CreateEmotion();
             };
+
+            emotions.onRemoveCallback = list =>
+            {
+                DeleteEmotion(list.index);
+            };
+        }
+
+        private Emotion CreateEmotion()
+        {
+            Emotion emotion = Emotion.Create();
+            emotion.name = nameof(Emotion);
+            emotion.name = emotion.emotion.ToString();
+            AssetDatabase.AddObjectToAsset(emotion, serializedObject.targetObject);
+            AssetDatabase.SaveAssets();
+            return emotion;
+        }
+
+        private void DeleteEmotion(int idx)
+        {
+            Emotion emotion = propEmotions.GetArrayElementAtIndex(idx).objectReferenceValue as Emotion;
+            propEmotions.GetArrayElementAtIndex(idx).objectReferenceValue = null;
+            propEmotions.DeleteArrayElementAtIndex(idx);
+            AssetDatabase.RemoveObjectFromAsset(emotion);
+            DestroyImmediate(emotion, true);
+            AssetDatabase.SaveAssets();
         }
 
         public override void OnInspectorGUI()

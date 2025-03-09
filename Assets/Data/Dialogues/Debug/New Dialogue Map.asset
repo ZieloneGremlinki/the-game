@@ -1,0 +1,610 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8615916938634604521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b90bbac3fe76493fb7d9f4d760b2ccf9, type: 3}
+  m_Name: f4832066265e62a48bef85222dfe495e
+  m_EditorClassIdentifier: 
+  NodeGUID: f4832066265e62a48bef85222dfe495e
+  Position: {x: 636, y: 77}
+  parents:
+  - {fileID: 2529400227545535865}
+  children:
+  - {fileID: 4730804501043257259}
+  - {fileID: 4730804501043257259}
+  DialogueKey: alfr2.2
+  DialogueOptions:
+  - dial.next
+  Emotion: 3
+--- !u!114 &-7480471290968953001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b90bbac3fe76493fb7d9f4d760b2ccf9, type: 3}
+  m_Name: 24e8e141d4839c34ab831798dab19d7c
+  m_EditorClassIdentifier: 
+  NodeGUID: 24e8e141d4839c34ab831798dab19d7c
+  Position: {x: 2329, y: 57}
+  parents:
+  - {fileID: -4533314749682951706}
+  children:
+  - {fileID: -3987380126959115953}
+  DialogueKey: alf8
+  DialogueOptions:
+  - dial.next
+  Emotion: 0
+--- !u!114 &-7142954556639462834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b90bbac3fe76493fb7d9f4d760b2ccf9, type: 3}
+  m_Name: e2f576cc0de2c1f4cb30fed5fe4b9332
+  m_EditorClassIdentifier: 
+  NodeGUID: e2f576cc0de2c1f4cb30fed5fe4b9332
+  Position: {x: 1598, y: 0}
+  parents:
+  - {fileID: 3736863016392416350}
+  children:
+  - {fileID: -40110713182665073}
+  DialogueKey: alfr3.3
+  DialogueOptions:
+  - dial.next
+  Emotion: 4
+--- !u!114 &-6593390436940353517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b90bbac3fe76493fb7d9f4d760b2ccf9, type: 3}
+  m_Name: d961699d0dd6deb42881a94246c98d22
+  m_EditorClassIdentifier: 
+  NodeGUID: d961699d0dd6deb42881a94246c98d22
+  Position: {x: 1001, y: 9}
+  parents:
+  - {fileID: -5232611733274041903}
+  - {fileID: 4730804501043257259}
+  - {fileID: 4730804501043257259}
+  - {fileID: -5232611733274041903}
+  children:
+  - {fileID: -3742191794981178902}
+  DialogueKey: alf3
+  DialogueOptions:
+  - dial.next
+  Emotion: 0
+--- !u!114 &-5232611733274041903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b90bbac3fe76493fb7d9f4d760b2ccf9, type: 3}
+  m_Name: 97a66ce9b1475a34f96f785d5fab1634
+  m_EditorClassIdentifier: 
+  NodeGUID: 97a66ce9b1475a34f96f785d5fab1634
+  Position: {x: 817, y: -38}
+  parents:
+  - {fileID: -3868696133831419186}
+  children:
+  - {fileID: -6593390436940353517}
+  - {fileID: -6593390436940353517}
+  DialogueKey: alfr1.3
+  DialogueOptions:
+  - alfr1.3r
+  Emotion: 4
+--- !u!114 &-4533314749682951706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b90bbac3fe76493fb7d9f4d760b2ccf9, type: 3}
+  m_Name: 1ea54010f7a43ae4b8ff604886eb7695
+  m_EditorClassIdentifier: 
+  NodeGUID: 1ea54010f7a43ae4b8ff604886eb7695
+  Position: {x: 2195, y: 56.99997}
+  parents:
+  - {fileID: 3876555642972870943}
+  children:
+  - {fileID: -7480471290968953001}
+  DialogueKey: alf7
+  DialogueOptions:
+  - dial.next
+  Emotion: 0
+--- !u!114 &-3987380126959115953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b90bbac3fe76493fb7d9f4d760b2ccf9, type: 3}
+  m_Name: 7551b9016cb026e4e8b72e27c3fc4b63
+  m_EditorClassIdentifier: 
+  NodeGUID: 7551b9016cb026e4e8b72e27c3fc4b63
+  Position: {x: 2463, y: 57}
+  parents:
+  - {fileID: -7480471290968953001}
+  children:
+  - {fileID: -1584787854048545109}
+  - {fileID: -1584787854048545109}
+  DialogueKey: alf9
+  DialogueOptions:
+  - alf9r1
+  - alf9r2
+  Emotion: 2
+--- !u!114 &-3868696133831419186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b90bbac3fe76493fb7d9f4d760b2ccf9, type: 3}
+  m_Name: bd23d9c5ad9fafa4d8db8405bc27b69c
+  m_EditorClassIdentifier: 
+  NodeGUID: bd23d9c5ad9fafa4d8db8405bc27b69c
+  Position: {x: 636, y: -38}
+  parents:
+  - {fileID: 941555428343023230}
+  children:
+  - {fileID: -5232611733274041903}
+  DialogueKey: alfr1.2
+  DialogueOptions:
+  - dial.next
+  Emotion: 5
+--- !u!114 &-3742191794981178902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b90bbac3fe76493fb7d9f4d760b2ccf9, type: 3}
+  m_Name: 03588a7f7b7074f478e347afb61aa860
+  m_EditorClassIdentifier: 
+  NodeGUID: 03588a7f7b7074f478e347afb61aa860
+  Position: {x: 1135, y: 9}
+  parents:
+  - {fileID: -6593390436940353517}
+  children:
+  - {fileID: 2859542627680692343}
+  - {fileID: 2322488489038657249}
+  - {fileID: 2322488489038657249}
+  DialogueKey: alf4
+  DialogueOptions:
+  - alf4r1
+  - alf4r2
+  - alf4r3
+  Emotion: 2
+--- !u!114 &-3631228933817283347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2faeabd77a724cee87dba64f5aafe925, type: 3}
+  m_Name: eceba20c522f99c4b8e9411f452a5b3c
+  m_EditorClassIdentifier: 
+  NodeGUID: eceba20c522f99c4b8e9411f452a5b3c
+  Position: {x: 2779, y: 71}
+  parents:
+  - {fileID: -1584787854048545109}
+  children: []
+--- !u!114 &-1740871848786382149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b90bbac3fe76493fb7d9f4d760b2ccf9, type: 3}
+  m_Name: f384404ff3cdb9648bdc8f65381c1ce8
+  m_EditorClassIdentifier: 
+  NodeGUID: f384404ff3cdb9648bdc8f65381c1ce8
+  Position: {x: 145, y: 0}
+  parents:
+  - {fileID: 116048082145561759}
+  children:
+  - {fileID: 3382557220313748844}
+  DialogueKey: alf1
+  DialogueOptions:
+  - dial.next
+  Emotion: 0
+--- !u!114 &-1584787854048545109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b90bbac3fe76493fb7d9f4d760b2ccf9, type: 3}
+  m_Name: bb97b07a11d82b34c9c8803003d04138
+  m_EditorClassIdentifier: 
+  NodeGUID: bb97b07a11d82b34c9c8803003d04138
+  Position: {x: 2626.4, y: 71}
+  parents:
+  - {fileID: -3987380126959115953}
+  - {fileID: -3987380126959115953}
+  children:
+  - {fileID: -3631228933817283347}
+  DialogueKey: 
+  DialogueOptions:
+  - dial.next
+  Emotion: 0
+--- !u!114 &-40110713182665073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b90bbac3fe76493fb7d9f4d760b2ccf9, type: 3}
+  m_Name: dbd3cbbdecb6edf4bb5ea0fd63cf45d5
+  m_EditorClassIdentifier: 
+  NodeGUID: dbd3cbbdecb6edf4bb5ea0fd63cf45d5
+  Position: {x: 1732, y: -0.000030517578}
+  parents:
+  - {fileID: -7142954556639462834}
+  children:
+  - {fileID: 2322488489038657249}
+  DialogueKey: alfr3.4
+  DialogueOptions:
+  - dial.next
+  Emotion: 2
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09bce929fcbb4cd090858c23b868c954, type: 3}
+  m_Name: New Dialogue Map
+  m_EditorClassIdentifier: 
+  Nodes:
+  - {fileID: 116048082145561759}
+  - {fileID: -1740871848786382149}
+  - {fileID: 3382557220313748844}
+  - {fileID: 941555428343023230}
+  - {fileID: 2529400227545535865}
+  - {fileID: -3868696133831419186}
+  - {fileID: -5232611733274041903}
+  - {fileID: -8615916938634604521}
+  - {fileID: 4730804501043257259}
+  - {fileID: -6593390436940353517}
+  - {fileID: -3742191794981178902}
+  - {fileID: 2859542627680692343}
+  - {fileID: 3736863016392416350}
+  - {fileID: -7142954556639462834}
+  - {fileID: -40110713182665073}
+  - {fileID: 2322488489038657249}
+  - {fileID: 3876555642972870943}
+  - {fileID: -4533314749682951706}
+  - {fileID: -7480471290968953001}
+  - {fileID: -3987380126959115953}
+  - {fileID: -3631228933817283347}
+  - {fileID: -1584787854048545109}
+  Links:
+  - outId: 0
+    output: 6c89c87b26a708842bb798221a2fb938
+    input: f384404ff3cdb9648bdc8f65381c1ce8
+  - outId: 0
+    output: f384404ff3cdb9648bdc8f65381c1ce8
+    input: d11d832968f909d4da5d8cc4770752c8
+  - outId: 0
+    output: 966c7cbb62201f3428ae3bd1b6ed4de9
+    input: bd23d9c5ad9fafa4d8db8405bc27b69c
+  - outId: 0
+    output: bd23d9c5ad9fafa4d8db8405bc27b69c
+    input: 97a66ce9b1475a34f96f785d5fab1634
+  - outId: 0
+    output: 68c310c7a6e2e134e962c0ccf1c42aa9
+    input: f4832066265e62a48bef85222dfe495e
+  - outId: 0
+    output: d11d832968f909d4da5d8cc4770752c8
+    input: 966c7cbb62201f3428ae3bd1b6ed4de9
+  - outId: 1
+    output: d11d832968f909d4da5d8cc4770752c8
+    input: 68c310c7a6e2e134e962c0ccf1c42aa9
+  - outId: 0
+    output: f4832066265e62a48bef85222dfe495e
+    input: ae7cb9b77025d3d4ab3cea9adf64ebb4
+  - outId: 0
+    output: ae7cb9b77025d3d4ab3cea9adf64ebb4
+    input: d961699d0dd6deb42881a94246c98d22
+  - outId: 0
+    output: 97a66ce9b1475a34f96f785d5fab1634
+    input: d961699d0dd6deb42881a94246c98d22
+  - outId: 0
+    output: d961699d0dd6deb42881a94246c98d22
+    input: 03588a7f7b7074f478e347afb61aa860
+  - outId: 0
+    output: 03588a7f7b7074f478e347afb61aa860
+    input: c4307b62ad1ec314f995b5a9b1bb62e8
+  - outId: 0
+    output: c4307b62ad1ec314f995b5a9b1bb62e8
+    input: e5fc8529f3719e040a94697e65f17115
+  - outId: 0
+    output: e5fc8529f3719e040a94697e65f17115
+    input: e2f576cc0de2c1f4cb30fed5fe4b9332
+  - outId: 0
+    output: e2f576cc0de2c1f4cb30fed5fe4b9332
+    input: dbd3cbbdecb6edf4bb5ea0fd63cf45d5
+  - outId: 0
+    output: dbd3cbbdecb6edf4bb5ea0fd63cf45d5
+    input: e81c061aea8892d49876eaad3b5c0291
+  - outId: 2
+    output: 03588a7f7b7074f478e347afb61aa860
+    input: e81c061aea8892d49876eaad3b5c0291
+  - outId: 1
+    output: 03588a7f7b7074f478e347afb61aa860
+    input: e81c061aea8892d49876eaad3b5c0291
+  - outId: 0
+    output: e81c061aea8892d49876eaad3b5c0291
+    input: 36da2d62caade3f429027731053e0aac
+  - outId: 0
+    output: 36da2d62caade3f429027731053e0aac
+    input: 1ea54010f7a43ae4b8ff604886eb7695
+  - outId: 0
+    output: 1ea54010f7a43ae4b8ff604886eb7695
+    input: 24e8e141d4839c34ab831798dab19d7c
+  - outId: 0
+    output: 24e8e141d4839c34ab831798dab19d7c
+    input: 7551b9016cb026e4e8b72e27c3fc4b63
+  - outId: 0
+    output: 7551b9016cb026e4e8b72e27c3fc4b63
+    input: bb97b07a11d82b34c9c8803003d04138
+  - outId: 1
+    output: 7551b9016cb026e4e8b72e27c3fc4b63
+    input: bb97b07a11d82b34c9c8803003d04138
+  - outId: 0
+    output: bb97b07a11d82b34c9c8803003d04138
+    input: eceba20c522f99c4b8e9411f452a5b3c
+  Comments: []
+--- !u!114 &116048082145561759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f2dd10dfb7e40969a630bedeb8cd9ec, type: 3}
+  m_Name: 6c89c87b26a708842bb798221a2fb938
+  m_EditorClassIdentifier: 
+  NodeGUID: 6c89c87b26a708842bb798221a2fb938
+  Position: {x: 0, y: 0}
+  parents: []
+  children:
+  - {fileID: -1740871848786382149}
+--- !u!114 &941555428343023230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b90bbac3fe76493fb7d9f4d760b2ccf9, type: 3}
+  m_Name: 966c7cbb62201f3428ae3bd1b6ed4de9
+  m_EditorClassIdentifier: 
+  NodeGUID: 966c7cbb62201f3428ae3bd1b6ed4de9
+  Position: {x: 466, y: -38}
+  parents:
+  - {fileID: 3382557220313748844}
+  - {fileID: 3382557220313748844}
+  children:
+  - {fileID: -3868696133831419186}
+  DialogueKey: alfr1.1
+  DialogueOptions:
+  - dial.next
+  Emotion: 5
+--- !u!114 &2322488489038657249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b90bbac3fe76493fb7d9f4d760b2ccf9, type: 3}
+  m_Name: e81c061aea8892d49876eaad3b5c0291
+  m_EditorClassIdentifier: 
+  NodeGUID: e81c061aea8892d49876eaad3b5c0291
+  Position: {x: 1927, y: 57}
+  parents:
+  - {fileID: -40110713182665073}
+  - {fileID: -3742191794981178902}
+  - {fileID: -3742191794981178902}
+  children:
+  - {fileID: 3876555642972870943}
+  DialogueKey: alf5
+  DialogueOptions:
+  - dial.next
+  Emotion: 0
+--- !u!114 &2529400227545535865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b90bbac3fe76493fb7d9f4d760b2ccf9, type: 3}
+  m_Name: 68c310c7a6e2e134e962c0ccf1c42aa9
+  m_EditorClassIdentifier: 
+  NodeGUID: 68c310c7a6e2e134e962c0ccf1c42aa9
+  Position: {x: 466, y: 77}
+  parents:
+  - {fileID: 3382557220313748844}
+  - {fileID: 3382557220313748844}
+  children:
+  - {fileID: -8615916938634604521}
+  DialogueKey: alfr2.1
+  DialogueOptions:
+  - dial.next
+  Emotion: 3
+--- !u!114 &2859542627680692343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b90bbac3fe76493fb7d9f4d760b2ccf9, type: 3}
+  m_Name: c4307b62ad1ec314f995b5a9b1bb62e8
+  m_EditorClassIdentifier: 
+  NodeGUID: c4307b62ad1ec314f995b5a9b1bb62e8
+  Position: {x: 1329.6, y: 0}
+  parents:
+  - {fileID: -3742191794981178902}
+  children:
+  - {fileID: 3736863016392416350}
+  DialogueKey: alfr3.1
+  DialogueOptions:
+  - dial.next
+  Emotion: 1
+--- !u!114 &3382557220313748844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b90bbac3fe76493fb7d9f4d760b2ccf9, type: 3}
+  m_Name: d11d832968f909d4da5d8cc4770752c8
+  m_EditorClassIdentifier: 
+  NodeGUID: d11d832968f909d4da5d8cc4770752c8
+  Position: {x: 304.6, y: 0}
+  parents:
+  - {fileID: -1740871848786382149}
+  children:
+  - {fileID: 941555428343023230}
+  - {fileID: 2529400227545535865}
+  - {fileID: 941555428343023230}
+  - {fileID: 2529400227545535865}
+  DialogueKey: alf2
+  DialogueOptions:
+  - alf2r1
+  - alf2r2
+  Emotion: 0
+--- !u!114 &3736863016392416350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b90bbac3fe76493fb7d9f4d760b2ccf9, type: 3}
+  m_Name: e5fc8529f3719e040a94697e65f17115
+  m_EditorClassIdentifier: 
+  NodeGUID: e5fc8529f3719e040a94697e65f17115
+  Position: {x: 1464, y: 0}
+  parents:
+  - {fileID: 2859542627680692343}
+  children:
+  - {fileID: -7142954556639462834}
+  DialogueKey: alfr3.2
+  DialogueOptions:
+  - dial.next
+  Emotion: 3
+--- !u!114 &3876555642972870943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b90bbac3fe76493fb7d9f4d760b2ccf9, type: 3}
+  m_Name: 36da2d62caade3f429027731053e0aac
+  m_EditorClassIdentifier: 
+  NodeGUID: 36da2d62caade3f429027731053e0aac
+  Position: {x: 2061, y: 57}
+  parents:
+  - {fileID: 2322488489038657249}
+  children:
+  - {fileID: -4533314749682951706}
+  DialogueKey: alf6
+  DialogueOptions:
+  - dial.next
+  Emotion: 0
+--- !u!114 &4730804501043257259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b90bbac3fe76493fb7d9f4d760b2ccf9, type: 3}
+  m_Name: ae7cb9b77025d3d4ab3cea9adf64ebb4
+  m_EditorClassIdentifier: 
+  NodeGUID: ae7cb9b77025d3d4ab3cea9adf64ebb4
+  Position: {x: 817, y: 77}
+  parents:
+  - {fileID: -8615916938634604521}
+  - {fileID: -8615916938634604521}
+  children:
+  - {fileID: -6593390436940353517}
+  - {fileID: -6593390436940353517}
+  DialogueKey: alfr2.3
+  DialogueOptions:
+  - alfr2.3r
+  Emotion: 6
