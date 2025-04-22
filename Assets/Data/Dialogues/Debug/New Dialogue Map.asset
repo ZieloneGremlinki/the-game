@@ -19,6 +19,7 @@ MonoBehaviour:
   children:
   - {fileID: 4730804501043257259}
   - {fileID: 4730804501043257259}
+  PersonId: 
   DialogueKey: alfr2.2
   DialogueOptions:
   - dial.next
@@ -41,6 +42,7 @@ MonoBehaviour:
   - {fileID: -4533314749682951706}
   children:
   - {fileID: -3987380126959115953}
+  PersonId: 
   DialogueKey: alf8
   DialogueOptions:
   - dial.next
@@ -63,6 +65,7 @@ MonoBehaviour:
   - {fileID: 3736863016392416350}
   children:
   - {fileID: -40110713182665073}
+  PersonId: 
   DialogueKey: alfr3.3
   DialogueOptions:
   - dial.next
@@ -88,6 +91,7 @@ MonoBehaviour:
   - {fileID: -5232611733274041903}
   children:
   - {fileID: -3742191794981178902}
+  PersonId: 
   DialogueKey: alf3
   DialogueOptions:
   - dial.next
@@ -111,6 +115,7 @@ MonoBehaviour:
   children:
   - {fileID: -6593390436940353517}
   - {fileID: -6593390436940353517}
+  PersonId: 
   DialogueKey: alfr1.3
   DialogueOptions:
   - alfr1.3r
@@ -133,6 +138,7 @@ MonoBehaviour:
   - {fileID: 3876555642972870943}
   children:
   - {fileID: -7480471290968953001}
+  PersonId: 
   DialogueKey: alf7
   DialogueOptions:
   - dial.next
@@ -156,6 +162,7 @@ MonoBehaviour:
   children:
   - {fileID: -1584787854048545109}
   - {fileID: -1584787854048545109}
+  PersonId: 
   DialogueKey: alf9
   DialogueOptions:
   - alf9r1
@@ -179,6 +186,7 @@ MonoBehaviour:
   - {fileID: 941555428343023230}
   children:
   - {fileID: -5232611733274041903}
+  PersonId: 
   DialogueKey: alfr1.2
   DialogueOptions:
   - dial.next
@@ -203,6 +211,7 @@ MonoBehaviour:
   - {fileID: 2859542627680692343}
   - {fileID: 2322488489038657249}
   - {fileID: 2322488489038657249}
+  PersonId: 
   DialogueKey: alf4
   DialogueOptions:
   - alf4r1
@@ -226,6 +235,9 @@ MonoBehaviour:
   parents:
   - {fileID: -1584787854048545109}
   children: []
+  OnDialogueEnd:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &-1740871848786382149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,6 +256,7 @@ MonoBehaviour:
   - {fileID: 116048082145561759}
   children:
   - {fileID: 3382557220313748844}
+  PersonId: 
   DialogueKey: alf1
   DialogueOptions:
   - dial.next
@@ -267,6 +280,7 @@ MonoBehaviour:
   - {fileID: -3987380126959115953}
   children:
   - {fileID: -3631228933817283347}
+  PersonId: 
   DialogueKey: 
   DialogueOptions:
   - dial.next
@@ -289,6 +303,7 @@ MonoBehaviour:
   - {fileID: -7142954556639462834}
   children:
   - {fileID: 2322488489038657249}
+  PersonId: 
   DialogueKey: alfr3.4
   DialogueOptions:
   - dial.next
@@ -441,6 +456,7 @@ MonoBehaviour:
   - {fileID: 3382557220313748844}
   children:
   - {fileID: -3868696133831419186}
+  PersonId: 
   DialogueKey: alfr1.1
   DialogueOptions:
   - dial.next
@@ -465,6 +481,7 @@ MonoBehaviour:
   - {fileID: -3742191794981178902}
   children:
   - {fileID: 3876555642972870943}
+  PersonId: 
   DialogueKey: alf5
   DialogueOptions:
   - dial.next
@@ -488,6 +505,7 @@ MonoBehaviour:
   - {fileID: 3382557220313748844}
   children:
   - {fileID: -8615916938634604521}
+  PersonId: 
   DialogueKey: alfr2.1
   DialogueOptions:
   - dial.next
@@ -510,6 +528,7 @@ MonoBehaviour:
   - {fileID: -3742191794981178902}
   children:
   - {fileID: 3736863016392416350}
+  PersonId: 
   DialogueKey: alfr3.1
   DialogueOptions:
   - dial.next
@@ -535,6 +554,7 @@ MonoBehaviour:
   - {fileID: 2529400227545535865}
   - {fileID: 941555428343023230}
   - {fileID: 2529400227545535865}
+  PersonId: 
   DialogueKey: alf2
   DialogueOptions:
   - alf2r1
@@ -558,6 +578,7 @@ MonoBehaviour:
   - {fileID: 2859542627680692343}
   children:
   - {fileID: -7142954556639462834}
+  PersonId: 
   DialogueKey: alfr3.2
   DialogueOptions:
   - dial.next
@@ -580,6 +601,7 @@ MonoBehaviour:
   - {fileID: 2322488489038657249}
   children:
   - {fileID: -4533314749682951706}
+  PersonId: 
   DialogueKey: alf6
   DialogueOptions:
   - dial.next
@@ -604,6 +626,7 @@ MonoBehaviour:
   children:
   - {fileID: -6593390436940353517}
   - {fileID: -6593390436940353517}
+  PersonId: 
   DialogueKey: alfr2.3
   DialogueOptions:
   - alfr2.3r

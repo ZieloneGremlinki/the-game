@@ -16,6 +16,7 @@ namespace GreenGremlins.Dialoguer
             Sad,
             Embarrassed,
             Disgusted,
+            Smug,
         }
 
         public EmotionType emotion;
@@ -34,6 +35,7 @@ namespace GreenGremlins.Dialoguer
     public class PersonData : ScriptableObject
     {
         public string Name;
+        public string Id;
         public Emotion[] Emotions;
 
         public Emotion GetEmotion(Emotion.EmotionType emotion)

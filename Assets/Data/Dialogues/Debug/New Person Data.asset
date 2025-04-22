@@ -54,7 +54,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d6f393f0f66499293df4ce6f93573ca, type: 3}
   m_Name: New Person Data
   m_EditorClassIdentifier: 
-  Name: "Posta\u0107"
+  Name: Gabriel
+  Id: a1
   Emotions:
   - {fileID: -1268878145238223492}
   - {fileID: 8887086570642588647}

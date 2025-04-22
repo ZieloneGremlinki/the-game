@@ -11,6 +11,7 @@ namespace GreenGremlins.Dialoguer.Editor.Editors
     public class ActionNodeEditor : UnityEditor.Editor
     {
         private SerializedProperty propDialogueKey;
+        private SerializedProperty propPersonId;
         private SerializedProperty propDialogueOptions;
         private SerializedProperty propEmotion;
         private ReorderableList dialogueOptions;
@@ -19,6 +20,7 @@ namespace GreenGremlins.Dialoguer.Editor.Editors
         private void OnEnable()
         {
             propDialogueKey = serializedObject.FindProperty("DialogueKey");
+            propPersonId = serializedObject.FindProperty("PersonId");
             propDialogueOptions = serializedObject.FindProperty("DialogueOptions");
             propEmotion = serializedObject.FindProperty("Emotion");
             dialogueOptions = new ReorderableList(serializedObject, serializedObject.FindProperty("DialogueOptions"),
@@ -46,6 +48,7 @@ namespace GreenGremlins.Dialoguer.Editor.Editors
             GUILayout.Label(new GUIContent(serializedObject.targetObject.name), EditorStyles.boldLabel);
             
             EditorGUILayout.PropertyField(propDialogueKey);
+            EditorGUILayout.PropertyField(propPersonId);
             EditorGUILayout.PropertyField(propEmotion);
             
             EditorGUILayout.Separator();

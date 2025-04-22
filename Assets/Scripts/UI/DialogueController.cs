@@ -13,7 +13,9 @@ public class DialogueController : MonoBehaviour
     [SerializeField] private Image personImage;
     [SerializeField] private Transform dialogueOptionsContainer;
     [SerializeField] private DialogueOption dialoguePrefab;
+    [SerializeField] private PersonData[] persons;
     private List<DialogueOption> _options = new List<DialogueOption>();
+    private int _currentPerson = -1;
 
     public void SetImage(Sprite sprite)
     {
@@ -25,6 +27,26 @@ public class DialogueController : MonoBehaviour
     {
         if (personName.text == name) return;
         personName.text = name;
+    }
+
+    public void SetPerson(string id)
+    {
+        for (int i = 0; i < persons.Length; i++)
+        {
+            if (persons[i].Id == id)
+            {
+                SetPerson(i);
+                return;
+            }
+        }
+
+        _currentPerson = 0;
+    }
+
+    private void SetPerson(int id)
+    {
+        _currentPerson = id;
+        SetName(persons[id].name);
     }
     
     public void SetOptions(List<string> options)

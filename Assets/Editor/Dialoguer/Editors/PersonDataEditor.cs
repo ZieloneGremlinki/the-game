@@ -10,13 +10,28 @@ namespace GreenGremlins.Dialoguer.Editor.Editors
     public class PersonDataEditor : UnityEditor.Editor
     {
         private SerializedProperty propPersonName;
+        private SerializedProperty propPersonId;
         private SerializedProperty propEmotions;
         private ReorderableList emotions;
+
+        private void LoadEmotions()
+        {
+            Object[] objs = AssetDatabase.LoadAllAssetsAtPath(AssetDatabase.GetAssetPath(target));
+            for (int i = 0; i < objs.Length; i++)
+            {
+                propEmotions.InsertArrayElementAtIndex(i);
+                propEmotions.GetArrayElementAtIndex(i).objectReferenceValue = objs[i];
+            }
+            AssetDatabase.SaveAssets();
+        }
         
         private void OnEnable()
         {
             propPersonName = serializedObject.FindProperty("Name");
+            propPersonId = serializedObject.FindProperty("Id");
             propEmotions = serializedObject.FindProperty("Emotions");
+            
+            LoadEmotions();
 
             emotions = new ReorderableList(serializedObject, propEmotions,
                 false, true, true, true);
@@ -84,6 +99,7 @@ namespace GreenGremlins.Dialoguer.Editor.Editors
             serializedObject.Update();
             
             EditorGUILayout.PropertyField(propPersonName);
+            EditorGUILayout.PropertyField(propPersonId);
             emotions.DoLayoutList();
             
             if (serializedObject.hasModifiedProperties)
