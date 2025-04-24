@@ -173,7 +173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3207547, g: 0.3207547, b: 0.3207547, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -210,9 +210,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70f910c2bc6fd574f8d16ae2f4cb018a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: {fileID: 4238346298737325939, guid: f351ef1926dd18045bc422b71167e69a, type: 3}
+  player: {fileID: 3313954781329332475, guid: 1fff09ee972faa34180142d38fdf1223, type: 3}
+  point: {fileID: 745657762118803448, guid: f351ef1926dd18045bc422b71167e69a, type: 3}
   line: {fileID: 863366933179678034, guid: 6ca9cfd7023479047994abbbcc951b8e, type: 3}
-  paths: 2
+  nPaths: 2
   rows: 10
   columns: 10
 --- !u!1 &829917582

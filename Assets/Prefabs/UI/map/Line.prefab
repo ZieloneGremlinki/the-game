@@ -63,4 +63,4 @@ MonoBehaviour:
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   start: {x: 0, y: 0}
   end: {x: 0, y: 0}
-  thickness: 10
+  thickness: 5
