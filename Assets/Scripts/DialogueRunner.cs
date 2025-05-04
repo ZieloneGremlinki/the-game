@@ -4,7 +4,7 @@ using GreenGremlins.Dialoguer;
 using UnityEngine;
 
 [DisallowMultipleComponent]
-public class DialogueTester : MonoBehaviour
+public class DialogueRunner : MonoBehaviour
 {
     [SerializeField] private PersonData person;
     [SerializeField] private DialoguerAsset dialogue;
@@ -13,15 +13,11 @@ public class DialogueTester : MonoBehaviour
 
     private void Awake()
     {
-        parser = new DialoguerParser(dialogue, person);
+        parser = new DialoguerParser(dialogue);
     }
 
     private void Start()
     {
         parser.Start();
-    }
-
-    private void Update()
-    {
     }
 }

@@ -43,10 +43,9 @@ namespace DefaultNamespace
         private JObject dialogues;
         private int curNode = 0;
 
-        public DialoguerParser(DialoguerAsset asset, PersonData data)
+        public DialoguerParser(DialoguerAsset asset)
         {
             dialogue = asset;
-            person = data;
             LoadDialogueFile();
         }
 
@@ -54,7 +53,7 @@ namespace DefaultNamespace
         {
             try
             {
-                dialogues = JObject.Parse(File.ReadAllText(Application.streamingAssetsPath + "/dialogues.json"));
+                dialogues = JObject.Parse(File.ReadAllText(Application.streamingAssetsPath + "/dialogues/"+dialogue.name+".json"));
             }
             catch (Exception e)
             {
@@ -69,7 +68,7 @@ namespace DefaultNamespace
         
         public void Start()
         {
-            UIController.Controller.Dialogue.SetName(person.Name);
+            //UIController.Controller.Dialogue.SetPerson();
             TraverseTo(dialogue.GetStartNode().NodeGUID);
         }
 
@@ -91,12 +90,13 @@ namespace DefaultNamespace
                 }
                 case DialoguerActionNode n:
                 {
-                    UIController.Controller.Dialogue.SetImage(person.GetEmotion(n.Emotion).sprite);
+                    UIController.Controller.Dialogue.SetPerson(n.PersonId);
+                    UIController.Controller.Dialogue.SetEmotion(n.Emotion);
                     UIController.Controller.Dialogue.SetDialogue(GetDialogue(n.DialogueKey));
                     UIController.Controller.Dialogue.ClearOptions();
                     for (int i = 0; i < n.DialogueOptions.Length; i++)
                     {
-                        DialogueOption opt = UIController.Controller.Dialogue.CreateOption(GetDialogue(n.DialogueOptions[i]));
+                        DialogueOption opt = UIController.Controller.Dialogue.CreateOption(n.DialogueOptions[i]);
                         NodeLink link = dialogue.Links.Find(x => x.outId == i && x.output == n.NodeGUID); 
                         opt.SetClick(() => TraverseTo(link.input));
                     }

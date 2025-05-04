@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using GreenGremlins.Dialoguer;
 using TMPro;
 using UnityEngine;
@@ -41,6 +42,14 @@ public class DialogueController : MonoBehaviour
         }
 
         _currentPerson = 0;
+    }
+
+    public void SetEmotion(Emotion.EmotionType emotion)
+    {
+        Sprite sprite = persons[_currentPerson].Emotions.ToList().Find(x => x.emotion == emotion).sprite;
+        
+        if (personImage.sprite == sprite) return;
+        personImage.sprite = sprite;
     }
 
     private void SetPerson(int id)
